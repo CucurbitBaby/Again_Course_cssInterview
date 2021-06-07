@@ -29,21 +29,21 @@
     * 除了 translate rotate scale skew 之外呢还有上面几个通用的线性变化(线性变换的特例) 也可以组合
     * 组合之后也是线性变换，但是从一个圆变换矩形..就不是线性变换了
 ## timing调速(easing放松策略)
-![01_timing_or_easing.png](/CourseImages/01_timing_or_easing.png)
+![01_timing_or_easing.png](./CourseImages/01_timing_or_easing.png)
 
 
 ## chrome动画面板
 * F12 -> Esc
-![02_chrome_Animations.png](/CourseImages/02_chrome_Animations.png)
+![02_chrome_Animations.png](./CourseImages/02_chrome_Animations.png)
 * 点击其中一个动画，图表的高度就是(随着时间变化的，属性变化的速度)，X轴是时间， 还可以拖动(起始)调试
-![03_chrome_Animations.png](/CourseImages/03_chrome_Animations.png)
+![03_chrome_Animations.png](./CourseImages/03_chrome_Animations.png)
 
 
 ## 详细在demo.html里
 
 ## 关键帧动画(animation)
 * 什么叫关键帧动画？
-![04_keyframe.png](/CourseImages/04_keyframe.png)
+![04_keyframe.png](./CourseImages/04_keyframe.png)
 * 指定一个动画里面的关键"路径"，比如说定ABC三个动画的状态，AB,BC之间由CSS自动计算 
 * 相当于多个"补间动画"组合到一起了
 * 与元素状态的变化无关
