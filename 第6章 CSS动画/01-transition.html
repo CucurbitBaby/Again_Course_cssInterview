@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>补间动画 - transition</title>
+
+    <style>
+        .container{
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: all 1s;
+            /*transition: width 1s,background 3s;  */   /*不仅支持多属性 还能指定对应时间*/
+            /*transition-delay: 1s;*/   /*延迟*/
+             /*transition-timing-function: ease-in-out; */      /*指定速度*/
+             transition-timing-function: linear;
+            /*transition-timing-function: cubic-bezier(0.465, -0.460, 0.525, 1.435);*/  /*自定义动画速度*/
+            /* transition-delay: 1s; */
+        }
+        .container:hover{
+            width: 800px;
+            /*transition支持多个属性 同时变动*/
+            background:green;       
+        }
+    </style>
+</head>
+<body>
+  <!-- todo 动画库 -->
+  <!-- todo 进场动画，出场动画 -->
+  <!-- todo 贝赛尔曲线动画在线制作(可以负值哦) https://matthewiein.com/tools/ceaser -->
+    <div class="container">
+    </div>
+</body>
+</html>
+<script>
+/*
+
+  补间动画 === 过渡动画，transition -> 过渡
+
+  语法
+    transition: property duration timing-function delay;
+
+  transition 属性设置元素当过渡效果，四个简写属性为：
+    transition-property           指定CSS属性的name，transition效果
+    transition-duration           transition效果需要指定多少秒或毫秒才能完成
+    transition-timing-function    指定transition效果的转速曲线
+    transition-delay              定义transition效果开始的时候(比如延迟1s)
+    
+  还可以指定多个属性哦。
+
+*/
+
+// 用JS代替hover也可以，只要定义了css的某个属性变换，然后改变这个属性的值之后就会触发动画。
+// setTimeout(function() {
+//   // console.log( document.querySelector('.container') )
+//   document.querySelector('.container').style.width = "800px"
+//   document.querySelector('.container').style.backgroundColor = "green"
+// }, 1000)
+
+</script>
